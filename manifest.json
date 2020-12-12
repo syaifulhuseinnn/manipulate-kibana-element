@@ -1,13 +1,13 @@
 {
-    "name": "Getting Started Example",
+    "name": "Kibana Extension",
     "version": "1.0",
-    "description": "Build an Extension!",
+    "description": "Extension for fixing trouble with filter input in Kibana 7.6.0",
     "manifest_version": 2,
     "permissions": ["activeTab", "declarativeContent", "storage"],
     "options_page": "options.html",
     "content_scripts": [
         {
-            "matches": ["https://10.54.181.136:5601/*"],
+            "matches": ["https://10.42.97.138:5601/*", "https://10.54.181.136:5601/*", "https://10.42.97.207:5601/*", "https://10.54.181.68:5601/*"],
             "js": ["contentScript.js"],
             "run_at": "document_end"
         }
