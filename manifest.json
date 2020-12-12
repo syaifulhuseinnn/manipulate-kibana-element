@@ -1,30 +1,29 @@
 {
-    "name": "Kibana Extension",
+    "name": "Manipulate Kibana Element",
     "version": "1.0",
     "description": "Extension for fixing trouble with filter input in Kibana 7.6.0",
     "manifest_version": 2,
     "permissions": ["activeTab", "declarativeContent", "storage"],
-    "options_page": "options.html",
     "content_scripts": [
         {
-            "matches": ["https://10.42.97.138:5601/*", "https://10.54.181.136:5601/*", "https://10.42.97.207:5601/*", "https://10.54.181.68:5601/*"],
+            "matches": ["https://*/app/kibana*"],
             "js": ["contentScript.js"],
             "run_at": "document_end"
         }
     ],
     "page_action": {
-        "default_popup": "popup.html"
-    },
-    "default_icon": {
-        "16": "images/get_started16.png",
-        "32": "images/get_started32.png",
-        "48": "images/get_started48.png",
-        "128": "images/get_started128.png"
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/16.png",
+            "32": "images/32.png",
+            "48": "images/48.png",
+            "128": "images/128.png"
+        }
     },
     "icons": {
-      "16": "images/get_started16.png",
-      "32": "images/get_started32.png",
-      "48": "images/get_started48.png",
-      "128": "images/get_started128.png"
+      "16": "images/16.png",
+      "32": "images/32.png",
+      "48": "images/48.png",
+      "128": "images/128.png"
     }
 }
