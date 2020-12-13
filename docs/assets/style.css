@@ -1,0 +1,27 @@
+body {
+    font-family: 'Proxima Nova Rg';
+    background-color: ghostwhite;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Circular Std Black';
+}
+
+.mt-6 {
+    margin-top: 160px;
+}
+
+.mt-5-5 {
+    margin-top: 100px;
+}
+
+.img-zoom {
+    transition: transform .2s;
+  }
+  
+  .img-zoom:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+    cursor: pointer;
+  }

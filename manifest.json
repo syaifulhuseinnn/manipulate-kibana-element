@@ -1,7 +1,7 @@
 {
-    "name": "Manipulate Kibana Element",
+    "name": "Manipulate Kibana Web HTML Element",
     "version": "1.0",
-    "description": "Extension for fixing trouble with filter input in Kibana 7.6.0",
+    "description": "If you are today using Kibana version 7.6.0 and you having trouble to see suggestions in the input filter when you are typing some keyword because the width is too small, just install this extension and your trouble will go forever. This extension will manipulate the width of the input filter.",
     "manifest_version": 2,
     "permissions": ["activeTab", "declarativeContent", "storage"],
     "content_scripts": [
