@@ -3,7 +3,6 @@
     "version": "1.0",
     "description": "Extension for manipulate size width input filter Kibana 7.6.0.",
     "manifest_version": 2,
-    "permissions": ["activeTab", "declarativeContent", "storage"],
     "content_scripts": [
         {
             "matches": ["https://*/app/kibana*"],
